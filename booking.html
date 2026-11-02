@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Trek | Adventure Trek</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Adventure Trek</h1>
+  <nav>
+    <a href="index.html">Home</a><a href="about.html">About</a>
+    <a href="treks.html">Treks</a><a href="details.html">Details</a>
+    <a href="booking.html">Booking</a><a href="activities.html">Activities</a>
+    <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Book Your Adventure</h2>
+  <p>Your next journey starts here.</p>
+</section>
+
+<main class="container">
+  <h2>Trek Reservation Form</h2>
+  <form action="#" method="post">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="trek">Choose a Trek</label>
+    <select id="trek" name="trek" required>
+      <option value="">Select a package</option>
+      <option>Mountain Trek</option>
+      <option>Forest Adventure</option>
+      <option>Snow Trek</option>
+    </select>
+
+    <label for="date">Preferred Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="people">Number of Participants</label>
+    <input type="number" id="people" name="people" min="1" max="20" value="1" required>
+
+    <label for="message">Special Requests</label>
+    <textarea id="message" name="message" rows="4" placeholder="Any additional information?"></textarea>
+
+    <button type="submit">Submit Booking</button>
+  </form>
+  <p><strong>Note:</strong> This sample form does not store bookings until connected to a backend.</p>
+</main>
+
+<footer><p>&copy; 2026 Adventure Trek</p></footer>
+</body>
+</html>
